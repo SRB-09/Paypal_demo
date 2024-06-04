@@ -44,7 +44,7 @@ controls.addEventListener("click", function(event){
     event.preventDefault();
     if(this.innerHTML === '<i class="fa-sharp fa-solid fa-pause" style="color: #ffffff;"></i>'){
         video.play();
-        this.innerHTML = iconPlay;
+        this.innerHTML = iconPause;
         document.querySelector(".overlay").style.backgroundColor = "black";
         document.querySelector(".overlay").style.opacity = "0.3";
         document.querySelector(".overlay").style.transition = "all  ease-out";
@@ -52,7 +52,7 @@ controls.addEventListener("click", function(event){
         document.querySelector(".controls").style.zIndex = "1";
     }else{
         video.pause();
-        this.innerHTML = iconPause;
+        this.innerHTML = iconPlay;
         document.querySelector(".overlay").style.transition = "all  ease-out";
         document.querySelector(".overlay").style.opacity = "0";
         document.querySelector(".overlay").style.zIndex = "-2";
