@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<head>
+    <title>Paypal Demo</title>
+    <meta name="author" content="Suraj Raj Ranabhat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Duplicate of e-commerce website Paypal made for project related to web design class of Broadway Infosys.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="pt-3 pb-3">
+        <div class="container d-flex justify-content-between align-items-center head">
+            
+            <!-- Menu option for small width devices  -->
+            <button id="menu-small"><i class="fa-solid fa-bars" style="color: #0000FF;"></i> Menu</button>
+
+            <!-- paypal logo  -->
+            <a href="#/" id="big">
+                <img src="PayPal-Logo.png" alt="Paypal logo" width="136px">
+            </a>
+
+            <!-- send and buy  -->
+            <nav class="d-flex align-items-center">
+                <div id="collapsibleNavId">
+                    <ul>
+                        <li>
+                            <a href="#/" id="buy">
+                                Buy 
+                                <i class="fa-solid fa-angle-down" style="color: #3b3b3b;" id="arrow-head"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/">
+                                Send
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+                    <button class="navbar-toggler d-lg-none d-flex justify-content-around" id="menu" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bars" style="color: #0000FF;"></i></span>Menu
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav bg-white">
+                            <li>
+                                <a class="nav-link" href="#" aria-current="page">
+                                    Buy
+                                    <i class="fa-solid fa-angle-down" style="color: #3b3b3b;" id="arrow-head"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Send</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav> -->
+            
+            <!-- paypal small logo for responsive design -->
+            <a href="#/" id="small">
+                <img src="paypal-small.png" alt="PayPal-Logo" width="50px">
+            </a>
+            
+            <!-- login and sign up button  -->
+            <div id="login-signup">
+                <a href="#/" id="Log">Log In </a>
+                <a href="#/" id="Sign">Sign Up</a>
+            </div>
+        </div>
+    
+
+        <!-- nav list that appears when hovered on "Buy" option  -->
+    <div class="buy-list">
+        <nav class="container d-flex justify-content-between">
+            <ul>
+                <li>
+                    <a href="#/">Pay on ebay</a>
+                </li>
+                <li>
+                    <a href="#/">Pay on your mobile</a>
+                </li> <br> <br>
+                <li>
+                    <a href="#/">Pay on website</a>
+                </li>
+                <li>
+                    <a href="#/">More ways to use us</a>
+                </li>
+            </ul>
+
+            <button id="cross"><i class="fa-solid fa-x" style="color: #ffffff;"></i></button>
+        </nav>
+    </div>
+
+    <!-- horizontal menu for small width devices  -->
+    <div class="menu-horizontal">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#/" id="buy-open">
+                        BUY
+                        <i class="fa-solid fa-angle-right" style="color: #ffffff;" id="arrow-head"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/">
+                        SEND
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- sign up in horizontal menu  -->
+            <a href="#/" id="signup">Sign Up</a>
+            <button id="cross" class="close"><i class="fa-solid fa-x me-1" style="color: #ffffff;"></i>Close</button>
+        </nav>
+    </div>
+
+    <!-- pay list that appears when clicked on "Buy" in horizontal menu  -->
+    <div class="pay-list">
+        <button id="buy-close">
+            <i class="fa-solid fa-angle-down fa-rotate-90"></i>
+            Buy
+        </button>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#/">Pay on your mobile</a>
+                </li>
+                <li>
+                    <a href="#/">Pay on website</a>
+                </li>
+                <li>
+                    <a href="#/">Pay on ebay</a>
+                </li>
+                <li>
+                    <a href="#/">More ways to use us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- First section  -->
+    <section class="first-section">
+
+        <!-- overlay when video is paused  -->
+        <div class="overlay"></div>
+
+        <!-- video in background  -->
+        <video  height="600" autoplay="true" muted loop class="video">
+            <source src="pay-on-the-go.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- button to control video  -->
+        <button class="controls">
+            <i class="fa-sharp fa-solid fa-pause icon" style="color: #ffffff;"></i>
+        </button>
+
+        <!-- Item in middle of first section  -->
+        <h1>The world is open for business.</h1>
+        <a href="#/" id="middle-option">Sign up for free</a>
+    </section>
+
+
+    <!-- Secon section  -->
+    <section class="second-section">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="bg-img col-sm-3 offset-sm-1">
+                    <img src="sectionone.jpg" class="img-fluid" alt="paypal login page">
+                </div>
+
+                <div class="col-sm-6 offset-sm-1 text-one">
+                    <h2>Quick and easy.</h2>
+                    <p>
+                        Millions of customer around the world use us for one simple reason: it's simple.
+                        Just an email address and password will get you through to checkoutbefore you can 
+                        reach for your wallet.
+                    </p>
+                    <div>
+                        <a href="#/">Pay on eBay</a> &nbsp;
+                        <a href="#/">Pay on website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third section  -->
+    <section class="third-section d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>We've got you covered.</h2>
+                    <p>
+                        Shop with peace of mind, knowing we protect your eligible purchases. If an eligible item doesn’t show up, or turns out to be different than described, we’ll help sort things out with the seller. Conditions apply.
+                    </p>
+                    <a href="#/">
+                        More about PayPal Buyer Protection
+                    </a>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth section  -->
+    <section class="fourth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2 text-center">
+                    <h2>Make a payment online or with your mobile.</h2> <br>
+                    <p>
+                        Make a payment in exchange for goods and services without sharing your financial information with the seller. It's simple, faster and more secure. Currency conversion fees may apply.
+                    </p> <br>
+                    <a href="#/">Make a payment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth section  -->
+    <section class="fifth-section">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="bg-img col-sm-3 offset-sm-1">
+                    <img src="fifthsection.jpg" class="img-fluid" alt="paypal login page">
+                </div>
+
+                <div class="offset-sm-2 col-sm-6 text-one">
+                    <h2>Shop around the world.</h2>
+                    <p>
+                        No need to book a flight ticket to shop worldwide.
+                        With a PayPal account you can shop at thousands of stores around the world in just a few easy clicks, 
+                        knowing your card details are never shared with the seller. Currency conversion fees may apply.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sixth-section">
+        <div class="container text-center">
+            <h2>Your money, in a good place.</h2>
+            <a href="#/">Sign up for free.</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="top">
+            <nav>
+                <ul class="d-flex justify-content-start flex-wrap">
+                    <li>
+                        <a href="#/">Help</a>
+                    </li>
+                    <li>
+                        <a href="#/">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#/">Fees</a>
+                    </li>
+                    <li>
+                        <a href="#/">Security</a>
+                    </li>
+                    <li>
+                        <a href="#/">Features</a>
+                    </li>
+                    <li>
+                        <a href="#/">Shop</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="middle">
+            <nav>
+                <ul class="d-flex justify-content-start flex-wrap">
+                    <li>
+                        <a href="#/">About</a>
+                    </li>
+                    <li>
+                        <a href="#/">Newsroom</a>
+                    </li>
+                    <li>
+                        <a href="#/">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="#/">Developers</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="last d-flex ps-0 justify-content-start flex-wrap">
+            <p>© 1999–2023 All rights reserved.</p>
+            <nav>
+                <ul class="d-flex flex-wrap">
+                    <li>
+                        <a href="#/">Accessibilty</a>
+                    </li>
+                    <li>
+                        <a href="#/">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#/">Legal</a>
+                    </li>
+                    <li>
+                        <a href="#/">Privacy</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <p id="last-line">PayPal Pte. Ltd. is licensed by the Monetary Authority of Singapore as a Major Payment Institution under the Payment Services Act 2019.</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/b9f552c372.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
